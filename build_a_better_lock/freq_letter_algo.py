@@ -1,9 +1,17 @@
 import itertools
 
-debug = False
+debug = True 
 
-n = 3
-m = 26
+n = 4
+m = 5
+
+vowels = {
+    "a":"a",
+    "e":"e",
+    "i":"i",
+    "o":"o",
+    "u":"u"
+    }
 
 def gen_frequency():
     return {
@@ -41,7 +49,7 @@ def gen_words(target_length):
         words = []
         for line in file:
             word = line.rstrip()
-            if len(word) == target_length:
+            if len(word) == target_length and word[0] not in vowels:
                 words.append(word)
         return words
 
@@ -95,7 +103,7 @@ if __name__ == '__main__':
     count = 0
     for letter_tuple in combinations:
         word = ''.join(letter_tuple)
-        print(word)
+        #print(word)
         if word in words:
             count += 1
 
