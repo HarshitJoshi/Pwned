@@ -10,8 +10,8 @@ debug = False
 json_format = False
 
 # change these values to your liking:
-n = 4
-m = 7
+n = 2
+m = 6
 
 # DO NOT edit below this:
 vowels = {
