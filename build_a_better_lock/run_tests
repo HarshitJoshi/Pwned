@@ -1,0 +1,25 @@
+#!/bin/bash
+
+OUTPUT_FILE=temp
+PYTHON_FILE="freq_chain_prune_trie.py"
+
+N=$(cat "freq_chain_prune_trie.py" | grep "n = " | tr -d ' ' | cut -d '=' -f 2)
+M=$(cat "freq_chain_prune_trie.py" | grep "m = " | tr -d ' ' | cut -d '=' -f 2)
+echo "Saved N: $N, M: $M" > $OUTPUT_FILE
+
+for ((n=2; n <= 6; n++)); do
+	for ((m=6; m <= 9; m++)); do
+		sed -i "s/m = *.$/m = $m/" $PYTHON_FILE
+		echo "=============================" >> $OUTPUT_FILE
+		echo "n: $n, m: $m" >> $OUTPUT_FILE
+		python3 $PYTHON_FILE >> $OUTPUT_FILE
+
+		cat $PYTHON_FILE | grep "n =" >> $OUTPUT_FILE
+		cat $PYTHON_FILE | grep "m =" >> $OUTPUT_FILE
+	done
+	sed -i "s/n = *.$/n = $n/" $PYTHON_FILE
+	sed -i "s/m = *.$/m = 6/" $PYTHON_FILE
+done
+
+sed -i "s/n = *.$/n = $N/" $PYTHON_FILE
+sed -i "s/m = *.$/m = $M/" $PYTHON_FILE

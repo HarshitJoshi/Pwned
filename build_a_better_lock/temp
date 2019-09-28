@@ -1,0 +1,333 @@
+Saved N: 4, M: 7
+=============================
+n: 2, m: 6
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 6
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+2766
+2152
+988
+497
+Matching combinations: 497
+Total combinations: 1296
+Percentage of matching/valid_words: 0.08228476821192053
+Percentage of matching/total_combinations: 0.38348765432098764
+n = 4
+m = 6
+=============================
+n: 2, m: 7
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 7
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3153
+2675
+1391
+751
+Matching combinations: 751
+Total combinations: 2401
+Percentage of matching/valid_words: 0.12433774834437086
+Percentage of matching/total_combinations: 0.3127863390254061
+n = 4
+m = 7
+=============================
+n: 2, m: 8
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 8
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3511
+3137
+1864
+1089
+Matching combinations: 1089
+Total combinations: 4096
+Percentage of matching/valid_words: 0.1802980132450331
+Percentage of matching/total_combinations: 0.265869140625
+n = 4
+m = 8
+=============================
+n: 2, m: 9
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 9
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3842
+3550
+2260
+1457
+Matching combinations: 1457
+Total combinations: 6561
+Percentage of matching/valid_words: 0.2412251655629139
+Percentage of matching/total_combinations: 0.22206980643194635
+n = 4
+m = 9
+=============================
+n: 3, m: 6
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 2
+m(# of letters in the tumblers): 6
+Number of valid words of length(n) 2: 333
+Pruning steps: 
+127
+36
+Matching combinations: 36
+Total combinations: 36
+Percentage of matching/valid_words: 0.10810810810810811
+Percentage of matching/total_combinations: 1.0
+n = 2
+m = 6
+=============================
+n: 3, m: 7
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 2
+m(# of letters in the tumblers): 7
+Number of valid words of length(n) 2: 333
+Pruning steps: 
+147
+49
+Matching combinations: 49
+Total combinations: 49
+Percentage of matching/valid_words: 0.14714714714714713
+Percentage of matching/total_combinations: 1.0
+n = 2
+m = 7
+=============================
+n: 3, m: 8
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 2
+m(# of letters in the tumblers): 8
+Number of valid words of length(n) 2: 333
+Pruning steps: 
+166
+64
+Matching combinations: 64
+Total combinations: 64
+Percentage of matching/valid_words: 0.1921921921921922
+Percentage of matching/total_combinations: 1.0
+n = 2
+m = 8
+=============================
+n: 3, m: 9
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 2
+m(# of letters in the tumblers): 9
+Number of valid words of length(n) 2: 333
+Pruning steps: 
+184
+81
+Matching combinations: 81
+Total combinations: 81
+Percentage of matching/valid_words: 0.24324324324324326
+Percentage of matching/total_combinations: 1.0
+n = 2
+m = 9
+=============================
+n: 4, m: 6
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 3
+m(# of letters in the tumblers): 6
+Number of valid words of length(n) 3: 1656
+Pruning steps: 
+714
+459
+167
+Matching combinations: 167
+Total combinations: 216
+Percentage of matching/valid_words: 0.10084541062801933
+Percentage of matching/total_combinations: 0.7731481481481481
+n = 3
+m = 6
+=============================
+n: 4, m: 7
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 3
+m(# of letters in the tumblers): 7
+Number of valid words of length(n) 3: 1656
+Pruning steps: 
+815
+563
+238
+Matching combinations: 238
+Total combinations: 343
+Percentage of matching/valid_words: 0.14371980676328502
+Percentage of matching/total_combinations: 0.6938775510204082
+n = 3
+m = 7
+=============================
+n: 4, m: 8
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 3
+m(# of letters in the tumblers): 8
+Number of valid words of length(n) 3: 1656
+Pruning steps: 
+916
+678
+328
+Matching combinations: 328
+Total combinations: 512
+Percentage of matching/valid_words: 0.19806763285024154
+Percentage of matching/total_combinations: 0.640625
+n = 3
+m = 8
+=============================
+n: 4, m: 9
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 3
+m(# of letters in the tumblers): 9
+Number of valid words of length(n) 3: 1656
+Pruning steps: 
+1012
+791
+424
+Matching combinations: 424
+Total combinations: 729
+Percentage of matching/valid_words: 0.2560386473429952
+Percentage of matching/total_combinations: 0.5816186556927297
+n = 3
+m = 9
+=============================
+n: 5, m: 6
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 6
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+2766
+2152
+988
+497
+Matching combinations: 497
+Total combinations: 1296
+Percentage of matching/valid_words: 0.08228476821192053
+Percentage of matching/total_combinations: 0.38348765432098764
+n = 4
+m = 6
+=============================
+n: 5, m: 7
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 7
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3153
+2675
+1391
+751
+Matching combinations: 751
+Total combinations: 2401
+Percentage of matching/valid_words: 0.12433774834437086
+Percentage of matching/total_combinations: 0.3127863390254061
+n = 4
+m = 7
+=============================
+n: 5, m: 8
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 8
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3511
+3137
+1864
+1089
+Matching combinations: 1089
+Total combinations: 4096
+Percentage of matching/valid_words: 0.1802980132450331
+Percentage of matching/total_combinations: 0.265869140625
+n = 4
+m = 8
+=============================
+n: 5, m: 9
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 4
+m(# of letters in the tumblers): 9
+Number of valid words of length(n) 4: 6040
+Pruning steps: 
+3842
+3550
+2260
+1457
+Matching combinations: 1457
+Total combinations: 6561
+Percentage of matching/valid_words: 0.2412251655629139
+Percentage of matching/total_combinations: 0.22206980643194635
+n = 4
+m = 9
+=============================
+n: 6, m: 6
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 5
+m(# of letters in the tumblers): 6
+Number of valid words of length(n) 5: 13361
+Pruning steps: 
+6924
+5065
+2526
+1332
+770
+Matching combinations: 770
+Total combinations: 7776
+Percentage of matching/valid_words: 0.0576304168849637
+Percentage of matching/total_combinations: 0.09902263374485597
+n = 5
+m = 6
+=============================
+n: 6, m: 7
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 5
+m(# of letters in the tumblers): 7
+Number of valid words of length(n) 5: 13361
+Pruning steps: 
+7725
+6333
+3471
+1879
+1262
+Matching combinations: 1262
+Total combinations: 16807
+Percentage of matching/valid_words: 0.0944540079335379
+Percentage of matching/total_combinations: 0.07508776105194265
+n = 5
+m = 7
+=============================
+n: 6, m: 8
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 5
+m(# of letters in the tumblers): 8
+Number of valid words of length(n) 5: 13361
+Pruning steps: 
+8462
+7416
+4601
+2634
+1896
+Matching combinations: 1896
+Total combinations: 32768
+Percentage of matching/valid_words: 0.14190554599206645
+Percentage of matching/total_combinations: 0.057861328125
+n = 5
+m = 8
+=============================
+n: 6, m: 9
+Running freq_chain/pruning algorithm (trie)...
+n(# of tumblers): 5
+m(# of letters in the tumblers): 9
+Number of valid words of length(n) 5: 13361
+Pruning steps: 
+9146
+8307
+5664
+3584
+2738
+Matching combinations: 2738
+Total combinations: 59049
+Percentage of matching/valid_words: 0.20492478107926054
+Percentage of matching/total_combinations: 0.046368270419482126
+n = 5
+m = 9
