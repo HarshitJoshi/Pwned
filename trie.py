@@ -1,3 +1,4 @@
+# https://codereview.stackexchange.com/questions/147752/trie-implementation-in-python
 class Node:
 
     def __init__(self, character):
@@ -12,10 +13,10 @@ class Node:
 class Trie:
 
     def __init__(self):
-        self._root = Node(None) 
+        self._root = Node(None)
 
     def insert(self, word):
-        if not word: 
+        if not word:
             return
         self.__insert(self._normalize_word(word), self._root).terminus = True
 
