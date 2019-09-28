@@ -11,7 +11,7 @@ json_format = False
 
 # change these values to your liking:
 n = 4
-m = 26
+m = 7
 
 # DO NOT edit below this:
 vowels = {
@@ -85,7 +85,6 @@ def get_word_freq(words, root):
 #
 def gen_tumblers(frequency_table, words, root, m):
     tumblers = []
-
     for t in range(0, n):
         tumbler = []
 
@@ -100,22 +99,19 @@ def gen_tumblers(frequency_table, words, root, m):
         # most frequently used letter at the specified
         # position 't'
         pruned_words = []
-        new_root = trie.Trie()
         for word in words:
             for w in root.get_possible_words(word):
                 if w[t] in tumblers[t]:
-                    new_root.insert(w)
                     pruned_words.append(w)
         if debug:
             print("Number of words from pruned words: {}".format(len(pruned_words)))
         pruning_steps.append(len(pruned_words))
-
+        words = None
         words = pruned_words
-        root = new_root
 
         # re-generate most frequently used letters list
         # from the 'pruned_words'
-        frequency_table = get_word_freq(pruned_words, new_root)
+        frequency_table = get_word_freq(pruned_words, root)
 
         if debug:
             if json_format:
@@ -126,16 +122,17 @@ def gen_tumblers(frequency_table, words, root, m):
     
 
 def gen_combinations(tumblers):
-    combinations = list(itertools.product(*tumblers))
+    combinations = list(map(''.join,itertools.product(*tumblers) ))
     total_combinations = len(combinations)
     return combinations, total_combinations
 
 
 if __name__ == '__main__':
 
-    start = time.time()
-    print("Running freq_chain/pruning algorithm...")
+    print("Running freq_chain/pruning algorithm (trie)...")
+    
     root, words = read_file(n)
+    
     frequency_table = get_word_freq(words, root)
     num_valid_words = len(words)
     
@@ -159,11 +156,12 @@ if __name__ == '__main__':
     
     # count how many combinations are in the dict
     count = 0
-    for letter_tuple in combinations:
-        word = ''.join(letter_tuple)
-        if word in words:
-            count += 1
-    
+
+    for word in combinations:
+        for w in root.get_possible_words(word):
+            if w == word:
+                count += 1
+
     print("Pruning steps: ")
     for step in pruning_steps:
         print(step)
@@ -171,5 +169,3 @@ if __name__ == '__main__':
     print("Total combinations: {}".format(total_combinations))
     print("Percentage of matching/valid_words: {}".format(count/num_valid_words))
     print("Percentage of matching/total_combinations: {}".format(count/total_combinations))
-    end=time.time()
-    print("Duration: {}".format(end - start))
