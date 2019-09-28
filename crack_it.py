@@ -1,5 +1,7 @@
-def crack(psk):
-    with open('words_alpha.txt', 'r') as file:
+import sys
+
+def crack(psk, dictionary):
+    with open(dictionary, 'r') as file:
         line_num = 0
         for line in file:
             if line.rstrip() == psk:
@@ -8,5 +10,8 @@ def crack(psk):
         return "psk not found in dict"
 
 if __name__ == '__main__':
+    dictionary=os.path.relpath("build_a_better_lock/words_alpha.txt")
+    if len(sys.argv) > 1:
+        dictionary = sys.argv[1]
     psk = input("Password: ")
-    print(crack(psk))
+    print(crack(psk, dictionary))
