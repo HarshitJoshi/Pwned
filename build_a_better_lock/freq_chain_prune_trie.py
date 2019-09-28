@@ -4,7 +4,7 @@ import trie
 import time
 
 # show output
-debug = False 
+debug = False
 
 # show dict output in json format
 json_format = False
@@ -154,6 +154,8 @@ if __name__ == '__main__':
         print()
     combinations, total_combinations = gen_combinations(tumblers)
     
+    if debug:
+        print("All combinations with above tumblers: {}".format(combinations))
     # count how many combinations are in the dict
     count = 0
 
